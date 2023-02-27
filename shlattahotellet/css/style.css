@@ -1,0 +1,83 @@
+:root{
+    --navbar-height: 140px; 
+    --main-color: #FFFFF5;
+    --seconary-color: #b5b3a1;
+}
+body{
+    font-family: 'Lora' serif;
+
+}
+
+header{
+    
+   
+   
+}
+
+
+
+nav{
+    height: var(--navbar-height);
+    color: rgb(10, 9, 9);
+    justify-content: center;
+    display: flex;
+    align-items: center;
+    background-color: var(--main-color);
+    padding: 2px 12px;
+    
+}
+ul li .btn{
+    font-size: 20px;
+    padding: 2px 12px;
+    background-color: #b5b3a1;
+    border-radius: 0.7rem;
+    border: 3px solid var(--seconary-color);
+}
+
+#logo{
+    text-align: center;
+    justify-content: center;
+}
+h1.logo{
+    font-family: 'Lora', cursive;
+    font-size: 40px;
+   /* border: 3px solid #b5b3a1;
+    border-radius: 0.7rem;
+    padding: 3px 12px;*/
+    
+}
+
+
+.nav-list{
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    gap: 10px; 
+    font-size: 20px;
+    font-weight: 100px;  
+     
+}
+.hero{
+    width: 100vw;
+    height: 600px;
+
+}
+
+nav li a{
+    padding: 2px 12px;
+    border: 3px solid var(--main-color); 
+    border-radius: 0.7rem;
+}
+nav li :hover{
+    border: 3px solid #b5b3a1;
+    border-radius: 0.7rem;
+    transition: .5s;
+    
+}
+
+ul li .btn:hover{
+    background-color: #FFFFF5;
+    border: 3px solid #b5b3a1;
+    transition: .3s;
+    
+}
