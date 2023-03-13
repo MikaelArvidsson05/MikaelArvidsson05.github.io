@@ -1,10 +1,13 @@
 :root{
     --navbar-height: 140px; 
-    --main-color: #FFFFF5;
+    --main-color: white;
     --seconary-color: #b5b3a1;
+    --third-color:#f0f0ec;
+   
 }
 body{
     font-family: 'Lora', serif;
+    
 
 }
 
@@ -68,7 +71,7 @@ h1 .logo{
     justify-content: center;
     gap: 10px; 
     font-size: 20px;
-    font-weight: 100px;  
+    font-weight: 100;  
      
 }
 .hero{
@@ -83,15 +86,15 @@ nav li a{
     border-radius: 0.7rem;
 }
 nav li :hover{
-    border: 3px solid #b5b3a1;
+    border: 3px solid var(--seconary-color);
     border-radius: 0.7rem;
     transition: .5s;
     
 }
 
 ul li .btn:hover{
-    background-color: #FFFFF5;
-    border: 3px solid #b5b3a1;
+    background-color: var(--main-color);
+    border: 3px solid var(--seconary-color);
     transition: .3s;
     
 }
@@ -143,46 +146,107 @@ height: 30rem;
     position: relative;
     left: 65%;
     top: -450px;
-    height: 250px;
     width: 400px;
     background-color: var(--main-color);
     border-radius: 5px;
     box-shadow: 0px 0px 20px 0px rgba(136,133,133,0.68);
     display: flex;
-    justify-content: space-around;
-    
-
-}
-
-.ankomst{
-    display: flex;
-    position: relative;
-    border: solid 1px var(--seconary-color);
-    height: 20%;
-    margin-top: 10px;
-}
-
-.ankomst a{
-    display: flex;
+    flex-wrap: wrap;
     justify-content: center;
-    font-size: 20px;
-    margin: 0 10px;
-    align-items: center;
+    overflow: hidden;
 }
 
-.avresa{
-    display: flex;
-    position: relative;
-    border: solid 1px var(--seconary-color);
-    height: 20%;
-    margin-top: 10px;
-}
-
-.avresa a{
-    display: flex;
-    justify-content: center;
-    font-size: 20px;
-    margin: 0 10px;
-    align-items: center;
+.infoboka > div{
+    flex: 1 1 40%;
+    border: solid 2px var(--seconary-color);
+    border-radius: 5px;
+    text-align: center;
+    font-size: 8px;
+    padding: 10px;
     
+}
+.infoboka > a{
+    flex: 1 1 90%;
+    text-align: center;
+}
+
+.infoboka > div, .infoboka a:first-of-type{
+    margin: 0.5rem;
+}
+
+.infoboka a:first-of-type{
+    background-color: #b5b3a1;
+    border-radius: 5px;
+    padding: 12px;
+    margin-top: 0;
+    color: var(--main-color);
+    text-transform: uppercase;
+    font-size: 16px;
+    font-weight: 400;       
+
+    
+}
+
+.infoboka a:first-of-type:hover{
+    background-color: #b5b3a1d6;
+    transition: .3s;
+    
+}
+
+
+
+input[type=date]{
+    width: 100px;
+    height: 30px;
+    font-size: 12px;
+    position: relative;
+    
+}
+
+input[type="date"]::-webkit-calendar-picker-indicator {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    width: auto;
+    height: auto;
+    color: transparent;
+    background: transparent;
+}
+
+input[type="date"]:after {
+    content: "\25BC"; 
+    color: #555;
+    margin-right: 2px;
+}
+
+
+
+input[type="date"]:hover:after {
+    color: #bf1400;
+    transition: .3s;
+}
+
+
+input[type="date"]:hover{
+    color: #bf1400;
+    transition: .3s;
+}
+
+
+.infoboka a:last-child{
+    background-color:  var(--third-color);
+    padding: 12px;
+    color: var(--seconary-color);
+    text-transform: uppercase;
+    font-size: 16px; 
+    font-weight: 400;  
+
+}
+
+.infoboka a:last-child:hover{
+    background-color: #e8e8d8a6;
+    transition: .3s;
+
 }
