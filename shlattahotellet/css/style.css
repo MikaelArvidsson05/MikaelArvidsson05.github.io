@@ -369,4 +369,109 @@ input[type="date"]:hover{
 
 }
 
+.footer{
+    
+}
+
+.footersocial{
+    background-image: url(../img/footer-img.png);
+    background-size: cover;
+    background-position: center;
+    min-height: 20rem;
+    background-color: yellow;
+    display: flex;
+    flex-direction: row;
+    padding: 5rem;
+    justify-content: space-between;
+    
+}
+.logofooter{
+    text-align: center;
+    justify-content: center;
+    padding: 5px 10px;
+    border: solid 2px black;
+    border-radius: 3px;
+    background: linear-gradient(90deg, rgba(0,0,0,0.05) 0%, rgba(0,0,0,0.05) 100%), url(../img/bildnavh1.webp);
+    background-size: cover;
+    background-position: center;
+    text-shadow: 2px 6px 10px rgb(255, 255, 255);
+    height: 7rem;
+    width: 10rem;
+
+}
+.sociala-medier{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    font-size: 2rem;
+    gap: 1.5rem;
+}
+
+.footerinfo{
+    flex-direction: row;
+    display: flex;
+    padding: 4rem;
+    gap: 1.5rem;
+}
+
+.flex{
+    display: flex;
+    
+    
+}
+.flex > div{
+    flex: auto;
+}
+
+.kontakt{
+    
+    flex: 2;
+    flex-direction: column;
+
+}
+
+.linje{
+    background-color: #bf1400;
+    width: 100%;
+    height: 2px;
+    border-radius: 1px;
+}
+
+
+.kontakter{
+    display: block;
+    padding: 2rem 0;
+}
+
+.post{
+    padding: 2rem 0;
+
+}
+
+.kontakter{
+    
+
+}
+
+.besök{
+    
+}
+
+.menyer{
+    
+    flex: 1; 
+    display: flex;
+    flex-direction: column;
+}
+
+
+.meny{
+    padding: 2rem 0;
+}
+
+.meny a{
+    display: block;
+   
+}
+
 
