@@ -1,0 +1,25 @@
+.boka-rum{
+    
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1rem;
+    grid-template-areas: 
+        "a b"
+        "c c"
+        "d d";
+    background-color: #ababab;
+} 
+.incheckning{
+    grid-area: a;
+    
+}
+
+.utcheckning{
+    grid-area: b;
+}
+.antal-personer{
+    grid-area: c;
+}
+.rum-priser{
+    grid-area: d;
+}

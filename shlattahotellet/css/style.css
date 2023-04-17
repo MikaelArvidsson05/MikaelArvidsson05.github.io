@@ -3,6 +3,11 @@
     --main-color: white;
     --seconary-color: #b5b3a1;
     --third-color:#f0f0ec;
+    --fourth-color: #ababab;   
+
+
+
+
    
 }
 body{
@@ -10,7 +15,7 @@ body{
     
 
 }
-
+ 
 header{
     
    
@@ -370,11 +375,12 @@ input[type="date"]:hover{
 }
 
 .footer{
+    background-color: #363636;
     
 }
 
 .footersocial{
-    background-image: url(../img/footer-img.png);
+    background-image: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), url(../img/footer-img.png);
     background-size: cover;
     background-position: center;
     min-height: 20rem;
@@ -383,7 +389,7 @@ input[type="date"]:hover{
     flex-direction: row;
     padding: 5rem;
     justify-content: space-between;
-    
+   
 }
 .logofooter{
     text-align: center;
@@ -391,12 +397,12 @@ input[type="date"]:hover{
     padding: 5px 10px;
     border: solid 2px black;
     border-radius: 3px;
-    background: linear-gradient(90deg, rgba(0,0,0,0.05) 0%, rgba(0,0,0,0.05) 100%), url(../img/bildnavh1.webp);
+    background: linear-gradient(90deg, rgba(0,0,0,0.05) 0%, rgba(0,0,0,0.05) 100%), ;
     background-size: cover;
     background-position: center;
-    text-shadow: 2px 6px 10px rgb(255, 255, 255);
     height: 7rem;
     width: 10rem;
+   
 
 }
 .sociala-medier{
@@ -405,6 +411,7 @@ input[type="date"]:hover{
     align-items: center;
     font-size: 2rem;
     gap: 1.5rem;
+    
 }
 
 .footerinfo{
@@ -412,6 +419,16 @@ input[type="date"]:hover{
     display: flex;
     padding: 4rem;
     gap: 1.5rem;
+    color: var(--fourth-color);
+}
+.footerinfo h1{
+    text-transform: uppercase;
+    color: var(--third-color);
+}
+
+.footerinfo h2{
+    text-transform: uppercase;
+    color: var(--third-color);
 }
 
 .flex{
@@ -431,16 +448,18 @@ input[type="date"]:hover{
 }
 
 .linje{
-    background-color: #bf1400;
+    background-color: var(--fourth-color);
     width: 100%;
-    height: 2px;
+    height: 1px;
     border-radius: 1px;
 }
 
 
 .kontakter{
-    display: block;
-    padding: 2rem 0;
+    flex: 1; 
+    display: flex;
+    flex-direction: column;
+    padding: 32px 0;
 }
 
 .post{
@@ -448,10 +467,7 @@ input[type="date"]:hover{
 
 }
 
-.kontakter{
-    
 
-}
 
 .besök{
     
@@ -460,8 +476,6 @@ input[type="date"]:hover{
 .menyer{
     
     flex: 1; 
-    display: flex;
-    flex-direction: column;
 }
 
 
@@ -470,7 +484,20 @@ input[type="date"]:hover{
 }
 
 .meny a{
-    display: block;
+    display: inline-block;
+}
+   
+.meny a:hover{
+    color: var(--third-color);
+    transition: .2s;
+    
+}
+
+.active{
+   
+    padding: 2px 12px;
+    border-radius: 0.7rem;
+    border: 3px solid var(--seconary-color);
    
 }
 
