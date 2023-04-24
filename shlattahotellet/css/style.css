@@ -112,9 +112,10 @@ main{
 width: 100%;
 height: 60rem;
 background-color: var(--main-color);
+}
 
-
-
+.heroinfo{
+    position: relative;
 }
 
 .heroimg{
@@ -128,7 +129,7 @@ height: 30rem;
 }
 
 .infotext{
-    width: 60%;
+    width: 50%;
     margin: 50px 50px 100px
     
 }
@@ -148,9 +149,9 @@ height: 30rem;
 }
 
 .infoboka{
-    position: relative;
-    left: 65%;
-    top: -450px;
+    position: absolute;
+    right: 7rem;
+    top: -6rem;
     width: 400px;
     background-color: var(--main-color);
     border-radius: 5px;
@@ -265,7 +266,7 @@ input[type="date"]:hover{
 
 .gridcontainer{
     display: grid;
-    width: 75rem;
+    max-width: 75rem;
     margin: 0 auto;
     grid-template-columns: repeat(3, 1fr);
     grid-auto-rows: 15rem;
@@ -498,7 +499,25 @@ input[type="date"]:hover{
     padding: 2px 12px;
     border-radius: 0.7rem;
     border: 3px solid var(--seconary-color);
+    
    
 }
 
+
+@media screen and (max width 1110px){
+    .infoboka{
+        position: absolute;
+        right: 1rem;
+        top: -6rem;
+        width: 400px;
+        background-color: var(--main-color);
+        border-radius: 5px;
+        box-shadow: 0px 0px 20px 0px rgba(136,133,133,0.68);
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        overflow: hidden;
+    }
+
+}
 

@@ -46,10 +46,9 @@
            </header>
            <main>
                 <div class="boka">
-                    <div class="boka-rum">
+                    <form class="boka-rum" action="/action.html">
                         <div class="incheckning">
                             <h1>incheckning</h1>
-                            <form action="/tutorial/action.html">
                                 <input type="date" name="dateofbirth">
                         </div>
                         <div class="utcheckning">
@@ -57,9 +56,20 @@
                             <form action="/tutorial/action.html">
                                 <input type="date" name="dateofbirth">
                         </div>
-                        <a class="antal-personer" href="">antal personer</a>
-                        <a class="rum-priser" href="">visa rum & priser</a>
-                    </div>
+                        <div class="antal-personer" >
+                            <select name="personer-rum" id="">
+                                <option value="0">personer / rum</option>
+                                <option value="1">1 vuxen / 1rum</option>
+                                <option value="2">2 vuxna / 1 rum</option>
+                                <option value="3">3 vuxna / 1 rum</option>
+                                <option value="4">1 vuxen / 2 rum</option>
+                                <option value="5">2 vuxna / 2 rum</option>
+                                <option value="6">3 vuxna / 2 rum</option>
+                                <option value="7">4 vuxna / 2 rum</option>
+                            </select>
+                        </div>
+                        <a class="rum-priser" href="">boka rum</a>
+                    </form>
                 </div>
                 
            </main>
