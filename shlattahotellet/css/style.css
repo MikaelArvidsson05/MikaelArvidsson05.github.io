@@ -12,16 +12,126 @@
 }
 body{
     font-family: 'Lora', serif;
-    
-
-}
  
+}
+
+
+
+
+
+
+
+#hamburger{
+    display: none;
+}
+
 .hamburger-container{
     position: fixed;
-    top: 0;
-    right: 0;
-    z-index: 1;
+    right: 20px;
+    top: 30px;
+    padding: 20px ;
+    background-color: var(--seconary-color);
+    z-index: 99999;
+    display: none;
+    border-radius: 4px;
 }
+
+.hamburger-icons,
+.hamburger-icons::before,
+.hamburger-icons::after
+{
+    content: "";
+    display: block;
+    width: 20px;
+    height: 2px;
+    background-color: whitesmoke;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    transition: all .3s;
+}
+
+.hamburger-icons::before{
+    transform: translate(-50%,-6px);    
+}
+
+.hamburger-icons::after{
+    transform: translate(-50%,6px);
+}
+
+#hamburger:checked + label .hamburger-icons{
+    background: transparent;
+}
+
+#hamburger:checked + label .hamburger-icons::before{
+    transform: translateX(-50%) rotate(45deg); 
+}
+
+#hamburger:checked + label .hamburger-icons::after{
+    transform: translateX(-50%) rotate(-45deg);
+}
+
+#hamburger:checked ~ .hamburger-overlay::before{
+    content: "";
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.2);
+    z-index: -1;
+}
+
+#hamburger:checked ~ .hamburger-overlay{
+    color: white;
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    flex-direction: column;
+    justify-content: flex-start;
+    gap: 50px;
+    background-color: rgba(0, 0, 0, 0.4);
+    padding-top: 50px;
+    z-index: 999;
+}
+
+#hamburger:checked ~ .hamburger-overlay > ul{
+    flex-direction: column;
+    text-align: center;
+}
+
+#hamburger:checked ~ .hamburger-overlay > ul > li > a{
+    font-size: 28px;
+    padding: 2px 12px;
+    transition: all .3s;
+}
+
+#hamburger:checked ~ .hamburger-overlay > ul > li > a:hover{
+    
+}
+
+#hamburger:checked ~ .hamburger-overlay > ul .dropdown-content{
+    left: 140%;
+    top: 0%;
+}
+
+#hamburger:checked ~ .hamburger-overlay > *:not(:first-child){
+    display: flex;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -515,6 +625,9 @@ input[type="date"]:hover{
         overflow: hidden;
     }
 
+  
+   
+
 }
 
 @media screen and (max-width: 1010px){
@@ -544,6 +657,13 @@ input[type="date"]:hover{
         font-weight: lighter;
         margin-top: 16rem;
 
+    }
+
+    .hamburger-container{
+        display: block;
+    }
+    .hamburger-overlay >*:not(:first-child){
+        display: none;
     }
 
 
@@ -610,6 +730,7 @@ input[type="date"]:hover{
         
         
     }
+}
 
 .footersocial{
     background-image: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), url(../img/footer-img.png);
