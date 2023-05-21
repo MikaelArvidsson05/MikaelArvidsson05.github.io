@@ -1,6 +1,6 @@
 
 :root{
-    --navbar-height: 140px; 
+    --navbar-height: 8.75rem; 
     --main-color: white;
     --seconary-color: #b5b3a1;
     --third-color:#f0f0ec;
@@ -73,8 +73,8 @@
 }
 
 .antal-personer select{
-    border:0px;
-    outline:0px;
+    border:0rem;
+    outline:0rem;
    
 }
 .rum-priser{
